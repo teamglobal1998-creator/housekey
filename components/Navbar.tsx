@@ -43,6 +43,7 @@ export default function Navbar() {
                     <Link href="/nri-corner" className="hover:text-accent transition-colors whitespace-nowrap">NRI Corner</Link>
                     <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
                     <Link href="/careers" className="hover:text-accent transition-colors">Career</Link>
+                    <Link href="/enquiry" className="hover:text-accent transition-colors font-bold text-accent">Enquiry</Link>
                     <Link href="/contact" className="btn-primary !py-2 !px-4 text-xs font-bold uppercase tracking-wider whitespace-nowrap">Contact</Link>
                 </div>
 
@@ -61,6 +62,7 @@ export default function Navbar() {
                     <Link href="/nri-corner" onClick={() => setIsOpen(false)}>NRI Corner</Link>
                     <Link href="/services" onClick={() => setIsOpen(false)}>Services</Link>
                     <Link href="/careers" onClick={() => setIsOpen(false)}>Career</Link>
+                    <Link href="/enquiry" className="text-accent" onClick={() => setIsOpen(false)}>Enquiry</Link>
                     <Link href="/contact" className="btn-primary" onClick={() => setIsOpen(false)}>Contact</Link>
                 </div>
             )}
