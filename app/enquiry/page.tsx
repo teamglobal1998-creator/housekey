@@ -46,7 +46,7 @@ export default function EnquiryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-6 md:py-12 px-2 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 pt-24 pb-12 md:pt-32 md:pb-20 px-2 sm:px-6 lg:px-8">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
