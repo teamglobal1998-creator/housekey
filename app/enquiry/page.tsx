@@ -65,14 +65,14 @@ export default function EnquiryPage() {
                 <button 
                   type="button"
                   onClick={() => setActiveTab("buy")}
-                  className={`px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${activeTab === "buy" ? "bg-white text-primary shadow-lg scale-105" : "text-gray-500 hover:text-primary"}`}
+                  className={`px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${activeTab === "buy" ? "bg-primary text-white shadow-lg scale-105" : "text-gray-500 hover:text-primary"}`}
                 >
                   Buy
                 </button>
                 <button 
                   type="button"
                   onClick={() => setActiveTab("rent")}
-                  className={`px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${activeTab === "rent" ? "bg-white text-primary shadow-lg scale-105" : "text-gray-500 hover:text-primary"}`}
+                  className={`px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${activeTab === "rent" ? "bg-primary text-white shadow-lg scale-105" : "text-gray-500 hover:text-primary"}`}
                 >
                   Rent
                 </button>
