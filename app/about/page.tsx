@@ -33,7 +33,7 @@ export default function About() {
                     <div className="relative">
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full -z-10" />
                         <Image
-                            src="/sumit_mahajan.jpg"
+                            src="/ceo.jpg"
                             alt="Sumit Mahajan - CEO HouseKey"
                             width={800}
                             height={1000}
