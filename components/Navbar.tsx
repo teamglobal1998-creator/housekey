@@ -35,7 +35,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Nav */}
-                <div className={`hidden md:flex items-center gap-6 font-bold tracking-widest text-[10px] uppercase ${isWhiteNav ? "text-gray-700" : "text-white"
+                <div className={`hidden md:flex items-center gap-6 font-bold tracking-widest text-xs uppercase ${isWhiteNav ? "text-gray-700" : "text-white"
                     }`}>
                     <Link href="/" className="hover:text-accent transition-colors">Home</Link>
                     <Link href="/about" className="hover:text-accent transition-colors">About</Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
                     <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
                     <Link href="/careers" className="hover:text-accent transition-colors">Career</Link>
                     <Link href="/enquiry" className="hover:text-accent transition-colors font-bold text-accent">Enquiry</Link>
-                    <Link href="/contact" className="btn-primary !py-2 !px-4 text-[10px] font-bold uppercase tracking-wider whitespace-nowrap">Contact</Link>
+                    <Link href="/contact" className="btn-primary !py-2.5 !px-6 text-xs font-bold uppercase tracking-wider whitespace-nowrap">Contact</Link>
                 </div>
 
                 {/* Mobile Toggle */}
