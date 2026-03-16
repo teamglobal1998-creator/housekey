@@ -9,6 +9,8 @@ export default function EnquiryPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const [activeTab, setActiveTab] = useState("buy");
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -55,16 +57,48 @@ export default function EnquiryPage() {
         <div className="bg-white shadow-xl rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100">
           {/* Header */}
           <div className="bg-white p-6 md:p-8 border-b-4 md:border-b-8 border-accent relative">
-            <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4 md:mb-6">HouseKey Enquiry Form</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-primary mb-6 md:mb-8">HouseKey Enquiry Form</h1>
             
-            <div className="space-y-2">
-              <label className="block text-sm font-bold text-primary uppercase tracking-wider">Select Project *</label>
-              <select required className="w-full md:w-1/2 p-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-accent outline-none font-semibold text-primary appearance-none cursor-pointer">
-                <option value="Swadesha">Swadesha (Moshi)</option>
-                <option value="Aurum Avenue">Aurum Avenue (Manchar)</option>
-                <option value="Adi Prime">Adi Prime (Moshi)</option>
-                <option value="Other">Other Project</option>
-              </select>
+            <div className="flex flex-col gap-8">
+              {/* Type Selection Tabs */}
+              <div className="inline-flex p-1.5 bg-gray-100 rounded-2xl self-start">
+                <button 
+                  type="button"
+                  onClick={() => setActiveTab("buy")}
+                  className={`px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${activeTab === "buy" ? "bg-white text-primary shadow-lg scale-105" : "text-gray-500 hover:text-primary"}`}
+                >
+                  Buy
+                </button>
+                <button 
+                  type="button"
+                  onClick={() => setActiveTab("rent")}
+                  className={`px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${activeTab === "rent" ? "bg-white text-primary shadow-lg scale-105" : "text-gray-500 hover:text-primary"}`}
+                >
+                  Rent
+                </button>
+              </div>
+
+              {/* Conditional Project Selection */}
+              {activeTab === "buy" && (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="space-y-3"
+                >
+                  <label className="block text-sm font-bold text-primary uppercase tracking-wider">Select Project *</label>
+                  <div className="relative group max-w-md">
+                    <select required className="w-full p-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-accent outline-none font-bold text-primary appearance-none cursor-pointer group-hover:bg-white transition-colors">
+                      <option value="Swadesha">Swadesha (Moshi)</option>
+                      <option value="Aurum Avenue">Aurum Avenue (Manchar)</option>
+                      <option value="Adi Prime">Adi Prime (Moshi)</option>
+                      <option value="Other">Other Project</option>
+                    </select>
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-accent">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
             </div>
           </div>
 
