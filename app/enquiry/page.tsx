@@ -48,17 +48,15 @@ export default function EnquiryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-28 pb-12 md:pt-40 md:pb-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 pt-24 pb-12 md:pt-32 md:pb-20 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
       <motion.div 
-        initial={{ opacity: 0.01, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 1, y: 0 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="bg-white shadow-2xl rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100 min-h-[600px]">
+        <div className="bg-white shadow-2xl rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100">
           {/* Header */}
           <div className="bg-white p-6 md:p-10 border-b-4 md:border-b-8 border-accent relative">
-            <h1 className="text-3xl md:text-4xl font-black text-primary mb-3">HouseKey Enquiry Form</h1>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-primary mb-3">HouseKey Enquiry Form</h1>
             <div className="flex flex-col sm:flex-row gap-4 mb-6 md:mb-8 text-sm md:text-base font-semibold text-gray-600">
               <a href="tel:+917448090909" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone size={18} className="text-accent" /> +91 74480 90909
