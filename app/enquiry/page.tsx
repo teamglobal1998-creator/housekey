@@ -57,7 +57,15 @@ export default function EnquiryPage() {
         <div className="bg-white shadow-xl rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100">
           {/* Header */}
           <div className="bg-white p-6 md:p-8 border-b-4 md:border-b-8 border-accent relative">
-            <h1 className="text-2xl md:text-3xl font-bold text-primary mb-6 md:mb-8">HouseKey Enquiry Form</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-primary mb-2">HouseKey Enquiry Form</h1>
+            <div className="flex flex-col sm:flex-row gap-4 mb-6 md:mb-8 text-sm md:text-base font-semibold text-gray-600">
+              <a href="tel:+917448090909" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Phone size={18} className="text-accent" /> +91 74480 90909
+              </a>
+              <a href="mailto:info@housekey.co.in" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Mail size={18} className="text-accent" /> info@housekey.co.in
+              </a>
+            </div>
             
             <div className="flex flex-col gap-8">
               {/* Type Selection Tabs */}
