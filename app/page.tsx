@@ -17,10 +17,10 @@ export default function Home() {
                         <div className="inline-flex items-center gap-2 px-4 py-2 border border-accent/40 rounded-full bg-accent/10 text-accent font-bold tracking-widest text-xs uppercase mb-8 shadow-[0_0_15px_rgba(197,160,89,0.15)]">
                             <Star size={14} className="fill-accent text-accent" /> Premium Real Estate
                         </div>
-                        <h1 className="text-5xl md:text-6xl lg:text-[5rem] font-bold leading-[1.1] mb-6">
+                        <h1 className="leading-[1.1] mb-6">
                             Elevating the <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-yellow-200 to-accent">Standard</span> of Living.
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-xl">
+                        <p className="mb-10 max-w-xl text-gray-300">
                             Discover Pune's most exclusive residential and commercial addresses. Expert advisory, seamless transactions, and a portfolio aligned with your lifestyle.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-5 mb-16">
@@ -90,10 +90,10 @@ export default function Home() {
             <section className="py-24 bg-gray-50">
                 <div className="w-full px-6 md:px-12 lg:px-20 border-y border-accent/20">
                     <div className="text-center mb-20 pt-10">
-                        <h2 className="text-4xl md:text-5xl font-extrabold text-[#222222] mb-4">
+                        <h2 className="section-title !text-center mx-auto block w-fit">
                             Building Trust, Delivering Excellence
                         </h2>
-                        <p className="text-[#666666] text-lg">
+                        <p className="max-w-2xl mx-auto">
                             Our mission is to simplify the real estate journey for everyone.
                         </p>
                     </div>

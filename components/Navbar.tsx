@@ -25,10 +25,10 @@ export default function Navbar() {
             }`}>
             <div className="w-full px-6 md:px-12 lg:px-16 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-primary font-bold text-xl shadow-[0_0_15px_rgba(197,160,89,0.3)] group-hover:shadow-accent/50 transition-all">
+                    <div className="w-10 h-10 bg-accent rounded-[5px] flex items-center justify-center text-primary font-bold text-xl shadow-[0_0_15px_rgba(197,160,89,0.3)] group-hover:shadow-accent/50 transition-all">
                         HK
                     </div>
-                    <span className={`text-2xl font-bold tracking-tighter ${isWhiteNav ? "text-primary" : "text-white"
+                    <span className={`text-xl md:text-2xl font-black tracking-tighter ${isWhiteNav ? "text-primary" : "text-white"
                         }`}>
                         HOUSE<span className="text-accent underline decoration-accent/30">KEY</span>
                     </span>
