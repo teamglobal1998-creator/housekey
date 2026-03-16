@@ -48,15 +48,15 @@ export default function EnquiryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-24 pb-12 md:pt-32 md:pb-20 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+    <div className="min-h-screen bg-gray-50 pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
       <motion.div 
         initial={{ opacity: 1, y: 0 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="bg-white shadow-2xl rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100">
+        <div className="bg-white shadow-2xl rounded-[5px] overflow-hidden border border-gray-100">
           {/* Header */}
           <div className="bg-white p-6 md:p-10 border-b-4 md:border-b-8 border-accent relative">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-primary mb-3">HouseKey Enquiry Form</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">HouseKey Enquiry Form</h1>
             <div className="flex flex-col sm:flex-row gap-4 mb-6 md:mb-8 text-sm md:text-base font-semibold text-gray-600">
               <a href="tel:+917448090909" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone size={18} className="text-accent" /> +91 74480 90909
@@ -112,7 +112,7 @@ export default function EnquiryPage() {
           <form onSubmit={handleSubmit} className="p-5 md:p-8 space-y-8 md:space-y-10">
             {/* Section: Basic Information */}
             <div className="space-y-4 md:space-y-6">
-              <h2 className="text-lg md:text-xl font-bold text-primary border-l-4 border-accent pl-4">Basic Information</h2>
+              <h2 className="text-lg md:text-xl font-bold text-primary border-l-4 border-accent pl-4 uppercase tracking-wider">Basic Information</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -171,7 +171,7 @@ export default function EnquiryPage() {
 
             {/* Section: Financials & Requirements */}
             <div className="space-y-6">
-              <h2 className="text-xl font-bold text-primary border-l-4 border-accent pl-4">Financials & Requirements</h2>
+              <h2 className="text-xl font-bold text-primary border-l-4 border-accent pl-4 uppercase tracking-wider">Financials & Requirements</h2>
               
               <div className="space-y-6">
                 <div>
@@ -214,7 +214,7 @@ export default function EnquiryPage() {
 
             {/* Section: Additional Details */}
             <div className="space-y-6">
-              <h2 className="text-xl font-bold text-primary border-l-4 border-accent pl-4">Additional Details</h2>
+              <h2 className="text-xl font-bold text-primary border-l-4 border-accent pl-4 uppercase tracking-wider">Additional Details</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>

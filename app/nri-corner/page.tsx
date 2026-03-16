@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { Globe, ShieldCheck, Home, PlaneLanding, Briefcase, Users } from "lucide-react";
+
+export const metadata: Metadata = {
+    title: "NRI Real Estate Investment Service Pune | HouseKey",
+    description: "Expert real estate advisory for NRIs investing in Pune and PCMC. End-to-end property management, secure transactions, and high ROI investment strategies.",
+};
 
 export default function NRICorner() {
     return (

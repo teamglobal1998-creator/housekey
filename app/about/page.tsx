@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "About HouseKey - 16+ Years of Real Estate Expertise",
+    description: "Learn about HouseKey's legacy of excellence in Pune & PCMC. Led by Sumit Mahajan, we provide strategic real estate advisory and master market insights.",
+};
 
 export default function About() {
     return (
@@ -6,7 +12,7 @@ export default function About() {
             <div className="w-full px-6 md:px-12 lg:px-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <h2 className="section-title">Our Story</h2>
+                        <h1 className="section-title">Our Story</h1>
                         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                             With over 16 years of expertise in the Pune and PCMC real estate markets, HouseKey was founded with a singular mission: to bridge the gap between world-class developments and discerning homebuyers.
                         </p>

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { BarChart3, Megaphone, Target, Zap } from "lucide-react";
+
+export const metadata: Metadata = {
+    title: "Real Estate Marketing & Sales Advisory Services | HouseKey",
+    description: "HouseKey provides 360° marketing, sales execution, brand building, and strategic advisory services for real estate developers in Pune and PCMC.",
+};
 
 const services = [
     {
@@ -32,7 +38,7 @@ export default function Services() {
         <main className="min-h-screen bg-white pt-32 pb-20">
             <div className="w-full px-6 md:px-12 lg:px-20">
                 <div className="text-center mb-16">
-                    <h2 className="section-title">Our Expertise</h2>
+                    <h1 className="section-title">Our Expertise</h1>
                     <p className="text-gray-600 max-w-2xl mx-auto mt-4">
                         HouseKey provides a comprehensive end-to-end sales and marketing ecosystem for the real estate industry.
                     </p>

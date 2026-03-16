@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
+
+export const metadata: Metadata = {
+    title: "Contact HouseKey | Real Estate Experts in Pune & PCMC",
+    description: "Get in touch with HouseKey for personalized real estate assistance in Pune. Reach us at +91 99229 91999 or visit our office in Moshi.",
+};
 
 export default function Contact() {
     return (
